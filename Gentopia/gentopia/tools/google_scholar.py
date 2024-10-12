@@ -1,9 +1,11 @@
 from typing import AnyStr, List
 from scholarly import scholarly, ProxyGenerator
 from gentopia.tools.basetool import *
-from scholarly import ProxyGenerator
 from itertools import islice
 
+#pg = ProxyGenerator()
+#pg.FreeProxies()
+#scholarly.use_proxy(pg)
 
 class SearchAuthorByNameArgs(BaseModel):
     author: str = Field(..., description="author name with the institute name (optional), e.g., Tan Lee")
